@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3b1426">
+  <title>Happy Teachers' Day, Mr. Randy Bello!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="scene">
+    <header class="intro">
+      <p class="eyebrow">A little book of gratitude</p>
+      <h1>Happy Teachers’ Day!</h1>
+      <p class="subtitle">A special message for <strong>Mr. Randy Bello</strong></p>
+    </header>
+
+    <section class="book-area" aria-label="Interactive Teachers' Day card">
+      <div class="book" id="book">
+        <article class="page page-back">
+          <div class="inside-left">
+            <span class="tiny-label">A memory to keep</span>
+            <h2>Thank you, Teacher!</h2>
+            <p class="left-note">Great teachers leave a little kindness in every lesson and a lasting light in every student.</p>
+            <div class="photo-frame">
+              <img id="photoPreview" alt="Your chosen photo" hidden>
+              <div id="photoPlaceholder" class="photo-placeholder">
+                <span class="photo-icon">✦</span>
+                <span>Add a favorite class photo</span>
+                <small>Your picture will appear here</small>
+              </div>
+            </div>
+            <label class="upload-button" for="photoInput">＋ Choose Photo</label>
+            <input id="photoInput" type="file" accept="image/*" hidden>
+            <p class="page-number">02</p>
+          </div>
+        </article>
+
+        <article class="page page-front" id="coverPage">
+          <div class="cover-design">
+            <div class="cover-topline"><span>WITH GRATITUDE</span><span>✦</span></div>
+            <div class="cover-emblem">✿</div>
+            <p class="cover-small">A SPECIAL TRIBUTE TO</p>
+            <h2>Mr. Randy<br><span>Bello</span></h2>
+            <div class="gold-rule"></div>
+            <p class="cover-message">For a teacher who makes a difference</p>
+            <div class="cover-bottom"><span>TEACHERS’ DAY</span><span>MADEL REGALA</span></div>
+          </div>
+        </article>
+
+        <article class="page page-inside-right">
+          <div class="inside-right">
+            <span class="tiny-label">From the heart</span>
+            <h2>Dear Mr. Randy Bello,</h2>
+            <p class="message">Happy Teachers’ Day! Thank you for your patience, guidance, and dedication. Your lessons help us grow not only in knowledge, but also in confidence and character.</p>
+            <p class="message">Thank you for sharing your time, encouraging us to do our best, and making a positive difference in our lives. Your hard work and kindness are truly appreciated.</p>
+            <p class="message">May you always be blessed with happiness, good health, and the same inspiration you give to your students every day.</p>
+            <p class="closing">With gratitude and respect,</p>
+            <p class="student-name">Madel Regala <span>♥</span></p>
+            <div class="audio-card">
+              <div class="audio-icon">♫</div>
+              <div class="audio-copy"><strong>A voice note for you</strong><small>Add a greeting or favorite song</small></div>
+              <label class="audio-upload" for="audioInput">Choose Audio</label>
+              <input id="audioInput" type="file" accept="audio/*" hidden>
+              <audio id="audioPlayer" controls hidden></audio>
+            </div>
+            <p class="page-number">03</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <nav class="controls" aria-label="Card controls">
+      <button id="openButton" class="primary-button" type="button">Open the Card <span>↗</span></button>
+      <button id="closeButton" class="secondary-button" type="button" disabled>Close Book</button>
+      <button id="resetButton" class="text-button" type="button">Reset photo & audio</button>
+    </nav>
+    <p id="status" class="status" aria-live="polite">Tap “Open the Card” to reveal your message.</p>
+    <footer>Made with appreciation by <strong>Madel Regala</strong> · Teachers’ Day</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
